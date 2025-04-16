@@ -20,7 +20,7 @@ public class MaxFlowSolver {
 
             while (!queue.isEmpty()) {
                 int u = queue.poll();
-                for (Edge e : network.getGraph()[u]) {
+                for (Edge e : network.getGraph().get(u)) {
                     if (parent[e.to] == null && e.to != source && e.remainingCapacity() > 0) {
                         parent[e.to] = e;
                         queue.add(e.to);
