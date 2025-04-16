@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-        FlowNetwork network = NetworkParser.parseFromFile("input/network.txt");
+        FlowNetwork network = NetworkParser.parseFromFile("src/input/network.txt");
         int source = 0;
         int sink = network.n - 1;
 
