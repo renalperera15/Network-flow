@@ -4,7 +4,7 @@ public class MaxFlowSolver {
     private final FlowNetwork network;
     private final int source, sink;
     private int maxFlow = 0;
-    private List<String> steps = new ArrayList<>();
+    private final List<String> steps = new ArrayList<>();
 
     public MaxFlowSolver(FlowNetwork network, int source, int sink) {
         this.network = network;
